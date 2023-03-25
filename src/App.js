@@ -1,15 +1,18 @@
 import './App.css';
 import Review from './components/Review';
+import { ReviewJson } from './data/ReviewJson';
 
 function App() {
   return (
     <div className="App">
-      <Review/>
-      <Review/>
-      <Review/>
-      <Review/>
-      <Review/>
-      <Review/>
+      {
+        ReviewJson.map((rvw, i) => (
+          <Review 
+            key={i}
+            {...rvw}
+          />
+        ))
+      }
     </div>
   );
 }
