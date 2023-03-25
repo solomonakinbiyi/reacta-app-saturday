@@ -1,0 +1,43 @@
+.review{
+    box-shadow: 0px 0px 20px rgba(178, 177, 177, 0.269);
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: top;
+    column-gap: 10px;
+}
+
+.review img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review__right{
+    display: flex;
+    flex-direction: column;
+}
+
+.review__right p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.review__name{
+    font-weight: 600;
+    font-size: .8rem;
+    margin-bottom: 5px!important;
+}
+
+.review__content{
+    font-size: .8rem;
+    margin-bottom: 10px!important;
+}
+
+.review__ratings{
+    font-size: .8rem;
+
+}
